@@ -210,8 +210,8 @@ DEPENDENCIES
   cssbundling-rails
   debug
   jsbundling-rails
-  pg
   kaminari
+  pg
   puma (~> 5.0)
   rails (~> 7.0.2, >= 7.0.2.3)
   ransack
