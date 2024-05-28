@@ -3,3 +3,10 @@
 <%= turbo_stream.replace @cat do %>
   <%= render partial: 'cats/cat', locals: { cat: @cat } %>
 <% end %>
+
+<%# <%= turbo_stream.update "flash" do %>
+  <%# <%= render partial: 'application/flash' %>
+<%# <% end %>
+
+<%# 上記をhelperに切り出しした %>
+<%= turbo_stream_flash %>
