@@ -1,0 +1,5 @@
+<%# <%= turbo_stream.replace @cat %>
+
+<%= turbo_stream.replace @cat do %>
+  <%= render partial: 'cats/cat', locals: { cat: @cat } %>
+<% end %>
