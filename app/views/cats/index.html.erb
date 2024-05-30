@@ -33,7 +33,7 @@
 
 <!-- 一覧 -->
 <div class="card shadow mt-3">
-  <%= turbo_frame_tag 'cat-list' do %>
+  <%= turbo_frame_tag 'cats-list' do %>
     <div class="card-header">
       <%= icon_with_text("table", "一覧") %>
     </div>
@@ -50,12 +50,12 @@
           <%= link_to icon_with_text("plus-circle", "登録"),
                       new_cat_path,
                       class: "btn btn-outline-primary",
-                      data: { turbo_frame: "new_cat" }
+                      data: { turbo_frame: "modal" }
           %>
         </div>
       </div>
 
-      <%= turbo_frame_tag "new_cat" %>
+      <%# <%= turbo_frame_tag "new_cat" %>
       <div id="cats">
         <%= render @cats %>
       </div>
